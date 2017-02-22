@@ -30,7 +30,7 @@ mysql.server stop
 > 修改密码 
  
  ````
- mysqladmin -u root password
+ mysqladmin -u p -root password
  Enter password
  New password
  Confirm new password
@@ -40,15 +40,56 @@ mysql.server stop
 > 使用 root 用户连接数据库 
 
 ````
-mysql -u root -h 127.0.0.1
+mysql -u root -p -h 127.0.0.1
 
 ````
 
 > 关闭数据库  
 
 ````
-quit: q\ exit:
+quit; q\ exit;
 
 ````
 
-> 创建数据库 create database [name]:
+> 创建数据库 
+
+````
+create database [name];
+
+````
+
+> 查看数据库
+
+````
+show databases;
+
+````
+> 删除数据库
+
+````
+drop database [name];
+
+````
+
+> 数据类型
+
+
+````
+
+       数据类型          |       说明 
+       
+       －－－－－－－－－－－－－－－－－－－－            
+       int              |       整数 
+       －－－－－－－－－－－－－－－－－－－－            
+       float            |       浮点数  
+       －－－－－－－－－－－－－－－－－－－－            
+       datetime         |       日期日期型 
+       －－－－－－－－－－－－－－－－－－－－            
+       date             |       日期日期型   
+       －－－－－－－－－－－－－－－－－－－－            
+       char(m)          |       定义字符类型   
+       －－－－－－－－－－－－－－－－－－－－            
+       varchar(m)       |       不定长字符类型
+
+````
+
