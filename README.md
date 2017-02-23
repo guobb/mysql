@@ -93,3 +93,74 @@ drop database [name];
 
 ````
 
+> 打开一个数据库
+
+````
+use db_name 
+
+````
+
+> 创建表并指定主键
+
+````
+create tabale [name](column_name,data_type,...)
+create table student(id int primary key, name varchar(50))
+列级约束 自动递增
+create table student(id int primary key auto_increment, name varchar(50))
+````
+
+> 显示数据下面所有的数据表
+
+````
+show tables
+
+````
+
+> 显示表的定义
+
+````
+show columns form table[name] 
+
+````
+
+> 查看当前打开的数据库是哪个数据库
+
+````
+select database()
+
+````
+
+> 删除数据表
+
+````
+drop table [name] name 表名字
+
+````
+
+#### ⚠ mysql 以分号为结束
+
+> 行记录操作－》插入操作
+
+````
+insert into tbl_name(id,name) values(1,'111');
+````
+
+> 查询表中所有的记录
+
+````
+select * from tbl_name;
+
+````
+
+> 更新记录
+
+````
+update student set age = age+1 where id=2;
+
+````
+> 删除记录
+
+````
+delete from student where name="111";
+
+````
